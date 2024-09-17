@@ -1,9 +1,8 @@
-import Card from "./shared/Card";
+import Card from './shared/Card';
 import Proptypes from 'prop-types';
-import { FaTimes } from "react-icons/fa";
+import { FaTimes } from 'react-icons/fa';
 
-function FeedbackItem({item, handleDelete}) {
-
+function FeedbackItem({ item, handleDelete }) {
   return (
     <Card reverse={true}>
       <div className="num-display">{item.rating}</div>
@@ -15,8 +14,8 @@ function FeedbackItem({item, handleDelete}) {
   );
 }
 
-FeedbackItem.propTypes= {
+FeedbackItem.propTypes = {
   item: Proptypes.object.isRequired,
-}
+};
 
 export default FeedbackItem;
